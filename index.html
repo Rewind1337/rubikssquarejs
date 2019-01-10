@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="interface.css">
+	<title>Rubik's Square</title>
+</head>
+<body>
+<div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%" id="bg">
+	<canvas id="myCanvas"></canvas>
+	<div style="position: absolute; top: 3px; left: 3px; width: 225px">
+		<h1 id="movestext">Züge: 0</h1>
+		<br>
+		<h1>Zufällig mischen</h1>
+		<button onclick="scramble()">mischen</button>
+		<br><br>
+		<h1>Spielfeld</h1>
+		<h1 id="fieldtext">4 x 4</h1>
+		<button style="width: 49%" onclick="bigger()" style="width: 100px">+1</button>
+		<button style="width: 49%" onclick="smaller()" style="width: 100px">-1</button>
+	</div>
+	<div style="position: absolute; top: 3px; right: 3px; width: 225px">
+		<h1>Optionen</h1>
+		<input id="showNumbers" checked type="checkbox" onclick="draw()">Zahlen anzeigen</button>
+	</div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,1 +1,1 @@
-# rubikssquarejs
+# Rubik's Square JS

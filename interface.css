@@ -1,0 +1,27 @@
+html {
+	background-color: #ffffff;
+}
+canvas {
+	background-color: #787878;
+	position: absolute;
+	top: 5px;
+	left: 238px;
+	border: 1px solid black;
+}
+h1 {
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	font-size: 28px;
+}
+h2 {
+	text-align: right;
+	padding: 0px;
+	margin: 0px;
+	font-size: 28px;
+}
+button {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
