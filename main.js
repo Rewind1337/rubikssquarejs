@@ -25,8 +25,8 @@ let dragstart = {
 }
 
 let canvas = document.getElementById("myCanvas");
-	canvas.width = 800;
-	canvas.height = 800;
+	canvas.width = 780;
+	canvas.height = 780;
 let ctx = canvas.getContext("2d");
 
 size = 4;
@@ -187,7 +187,7 @@ function draw() {
 				ctx.fillText(toDraw.value, (i - 1) * cellScale + cellScale/2, (j) * cellScale - cellScale/3);
 			}
 			ctx.strokeRect((i - 1) * cellScale, (j - 1) * cellScale, cellScale, cellScale);
-	//		ctx.strokeText(toDraw.value, (i - 1) * cellScale + cellScale/2, (j) * cellScale - cellScale/3);
+			ctx.strokeText(toDraw.value, (i - 1) * cellScale + cellScale/2, (j) * cellScale - cellScale/3);
 		}
 	}
 }
@@ -202,7 +202,7 @@ function init() {
 	document.getElementById("movestext").innerHTML = "Züge: " + moves;
 	document.getElementById("fieldtext").innerHTML = size + " x " + size;
 	grid = [];
-	cellScale = 800 / size;
+	cellScale = canvas.width / size;
 
 	for (let i = 1; i <= size; i++) {
 		grid.push([]);
